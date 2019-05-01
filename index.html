@@ -15,7 +15,7 @@
       </div>
       <div class='col-md-6 text-center'>
           <br> <br>
-          <h1 class="jumbotron" width=100%> Mission to Mars <a href="/scrape" id="scrape_btn" class="btn btn-primary" role="button">Scrape New Data</a></h1>
+          <h1 class="jumbotron" width=100%> Mission to Mars <br><a href="/scrape" id="scrape_btn" class="btn btn-primary" role="button">Scrape New Data</a></h1>
           <br> <br>
       </div>
       <div class="col-md-3">
@@ -27,17 +27,11 @@
       </div>
       <div class="col-md-10">
       <br> <br>
-          {% if news_title %}
               <h2>Latest Mars News</h2>
               <hr>
               <h3>{{news_title}}</h3>
               <p>{{news_paragraph}}</p>
-              
               <br>
-          {% else %}
-              <h2>Click the Scrape New Data button above to get the latest Mars news, facts, and images</h2>
-            <br>
-          {% endif %}
       </div>
       <div class='col-md-1'>
       </div>
