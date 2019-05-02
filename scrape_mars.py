@@ -102,7 +102,7 @@ def marsFacts():
     mars_facts_df = mars_facts[0]
     mars_facts_df.columns = ['Fact Type', 'Data']
     
-    mars_facts_html = mars_facts_df.to_html(header=True, index=False)
+    mars_facts_html = mars_facts_df.to_html(header=False, index=False)
     
     return mars_facts_html
 
@@ -146,9 +146,9 @@ def marsHemisphereImages():
                    {'title':label3, 'image_link': image3},
                    {'title':label4,'image_link':image4}]
 
+    browser.quit()
     return mars_hem_images
 
-    browser.quit()
 
    
     
