@@ -29,8 +29,8 @@
       <br> <br>
               <h2>Latest Mars News</h2>
               <hr>
-              <h3>{{news_title}}</h3>
-              <p>{{news_paragraph}}</p>
+              <h3>{{mars.news_data.news_title}}</h3>
+              <p>{{mars.news_data.paragraph_text}}</p>
               <br>
       </div>
       <div class='col-md-1'>
@@ -42,20 +42,20 @@
           <h3>Featured Mars Image</h3>
           <hr>
           <figure>
-              <img src={{featured_image_url}} alt="Featured image for NASA mars page">
+              <img src={{mars.mars_featured_image}} width=100%, alt="Featured image for NASA mars page">
           </figure>
       </div>
       <div class='col-md-4'>
           <div class="data-box">
               <h3>Current Weather on Mars</h3>
               <hr>
-              <p>{{mars_weather}}</p>
+              <p>{{mars.mars_weather}}</p>
           </div>
           <br>
           <div class="data-box">
               <h3>Mars Facts</h3>
               <hr>
-              {{mars_facts_table|safe}}
+              {{mars.mars_facts_table|safe}}
           </div>
           <br>
          
@@ -71,28 +71,28 @@
   <div class="row">
       <div class='col-md-6'>
           <figure>
-              <figcaption class="hemisphere_caption"> {{hemisphere_title1}} </figcaption>
-              <img src={{hemisphere_img1}} alt="Mars hemisphere 1">
+              <figcaption class="hemisphere_caption"> {{mars.mars_hemispheres[0].title}} </figcaption>
+              <img src={{mars.mars_hemispheres[0].image_link}} width=75%, alt="Mars hemisphere 1">
           </figure>
       </div>
       <div class='col-md-6'>
           <figure>
-              <figcaption class="hemisphere_caption"> {{hemisphere_title2}} </figcaption>
-              <img src={{hemisphere_img2}} alt="Mars hemisphere 2">
+              <figcaption class="hemisphere_caption"> {{mars.mars_hemispheres[1].title}} </figcaption>
+              <img src={{mars.mars_hemispheres[1].image_link}} width=75%, alt="Mars hemisphere 2">
           </figure>
       </div>
   </div>
   <div class="row">
       <div class='col-md-6'>
           <figure>
-              <figcaption class="hemisphere_caption"> {{hemisphere_title3}} </figcaption>
-              <img src={{hemisphere_img3}} alt="Mars hemisphere 3">
+              <figcaption class="hemisphere_caption"> {{mars.mars_hemispheres[2].title}} </figcaption>
+              <img src={{mars.mars_hemispheres[2].image_link}} width=75%, alt="Mars hemisphere 3">
           </figure>
       </div>
       <div class='col-md-6'>
           <figure>
-              <figcaption class="hemisphere_caption"> {{hemisphere_title4}} </figcaption>
-              <img src={{hemisphere_img4}} alt="Mars hemisphere 4">
+              <figcaption class="hemisphere_caption"> {{mars.mars_hemispheres[3].title}} </figcaption>
+              <img src={{mars.mars_hemispheres[3].image_link}} width=75%, alt="Mars hemisphere 4">
           </figure>
       </div>
   </body>
