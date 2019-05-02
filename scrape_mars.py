@@ -15,12 +15,10 @@ import pandas as pd
 import time
 
 
-
 #Setup splinter browser
 def init_browser():
     executable_path = {"executable_path": "chromedriver"}
     return Browser("chrome", **executable_path, headless=False)
-
 
 
 #Create the scrape function that will run all the other functions and return the outputs
@@ -34,7 +32,6 @@ def scrape():
     return mars_data
 
    
-
 
 # Scrape Mars News Data
 def marsNewsData():
